@@ -1,0 +1,9 @@
+# Make sure you're inside your repo folder
+for i in {1..10}
+do
+  echo "This is commit $i" >> commits.txt
+  git add commits.txt
+  git commit -m "Dummy commit $i"
+done
+
+git push origin main
